@@ -1,0 +1,436 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Services &amp; Concierge — Staylex</title>
+<meta name="description" content="Twelve signature services for Staylex guests: fridge fill-ups, late checkout, private chefs, lake-day gear, event packages, airport coordination, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 2 12v18h9v-9h10v9h9V12z' fill='%231d5b54'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="preview-note">Private preview — Staylex STR Management. Launching soon; not yet accepting bookings.</div>
+<header class="site-header"><div class="wrap"><nav class="nav">
+<a href="index.html" class="brand"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2 2 12v18h28V12L16 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 15l12 10M22 15 10 25" stroke="var(--color-gold)" stroke-width="2.4" stroke-linecap="round"/></svg><span>Staylex</span></a>
+<div class="nav-links"><a href="index.html">Home</a><a href="stays.html">Stays</a><a href="services.html" style="color:var(--color-text)">Services</a><a href="owners.html">For Owners</a><a href="contact.html">Contact</a></div>
+<div class="nav-actions"><button class="icon-btn" data-theme-toggle aria-label="Toggle theme"></button><a href="contact.html" class="btn btn-primary">Book direct</a><button class="icon-btn menu-toggle" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+</nav></div></header>
+<section class="hero" style="min-height:min(60vh,520px)"><div class="hero-bg"><img src="https://guesty-listing-images.s3.amazonaws.com/guesty-listing-images/production/original_52565777_1261945365.jpg" alt="Lakeside great room with panoramic views"></div>
+<div class="hero-inner wrap"><span class="eyebrow" style="color:var(--color-gold-soft)">Services &amp; Concierge</span>
+<h1>More than a key.<br>A hosted stay.</h1>
+<p class="lede">Twelve signature touches we offer at every Staylex home — from fridge fill-ups to in-home chefs. Add what you need at booking or after.</p>
+<div class="hero-cta"><a href="#all-services" class="btn btn-gold">See all services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="contact.html" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.5)">Ask about add-ons</a></div>
+
+</div></section>
+<section class="section" id="stay-protection" style="background:var(--color-surface-offset)"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Included &amp; Optional</span><h2>Stay protection — covered before you arrive.</h2><p>Every Staylex reservation includes a damage waiver so you can relax. Optional travel protection adds trip-cancellation and medical coverage on top.</p></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin-top:1rem">
+    <div style="padding:2rem;border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface);position:relative">
+      <span class="card-badge" style="position:absolute;top:1rem;right:1rem;background:var(--color-primary);color:#fff">Included in every stay</span>
+      <div class="ico" style="margin-bottom:1rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;margin:0 0 .5rem">Accidental Damage Waiver</h3>
+      <p style="color:var(--color-text-muted);margin:0 0 1rem">A small fee added to every reservation that waives accidental damage up to <strong style="color:var(--color-text)">$3,000</strong> — in place of a traditional security deposit. Broken wine glass? Stained rug? Covered, no awkward email from us.</p>
+      <ul style="list-style:none;padding:0;margin:0;color:var(--color-text-muted);font-size:.95rem">
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ Accidental breakage of furnishings &amp; decor</li>
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ Minor stains &amp; spills on linens, rugs, upholstery</li>
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ No deposit hold on your card</li>
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✗ Does not cover intentional damage, theft, or smoking violations</li>
+      </ul>
+    </div>
+    <div style="padding:2rem;border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface);position:relative">
+      <span class="card-badge" style="position:absolute;top:1rem;right:1rem;background:var(--color-gold);color:#1a1a1a">Optional add-on</span>
+      <div class="ico" style="margin-bottom:1rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg></div>
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;margin:0 0 .5rem">Travel Protection</h3>
+      <p style="color:var(--color-text-muted);margin:0 0 1rem">An optional plan from our insurance partner that covers what life throws at trips. Add it at checkout for a small percentage of your reservation total.</p>
+      <ul style="list-style:none;padding:0;margin:0;color:var(--color-text-muted);font-size:.95rem">
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ Trip cancellation for covered reasons (illness, weather, work)</li>
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ Trip interruption &amp; emergency travel costs</li>
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ Medical &amp; baggage protection while traveling</li>
+        <li style="padding:.35rem 0;border-top:1px solid var(--color-border)">✓ Underwritten by a licensed third-party carrier</li>
+      </ul>
+    </div>
+  </div>
+  <p style="font-size:.85rem;color:var(--color-text-muted);margin-top:1.25rem;text-align:center">Damage waiver covers accidental damage only and is not insurance. Travel Protection is offered through our partner and subject to policy terms. Full terms shown at checkout.</p>
+</div></section>
+
+<section class="section" id="all-services"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Services & Concierge</span><h2>More than a key — a hosted stay</h2><p>Optional add-ons and signature touches we offer at every Staylex home. Most are bookable straight from your arrival email.</p></div>
+<div class="values" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><h3>Fridge fill-up</h3><p>Pre-stock the fridge before you arrive — groceries, drinks, even diapers. Pick from curated bundles or send us your list.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8 8 16M8 8l8 8"/></svg></div><h3>Late checkout & early check-in</h3><p>Reserve up to 4pm checkout or 11am check-in for a flat fee — confirmed at booking, no day-of guessing.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>24/7 host hotline</h3><p>One number, one human. Locked out, lost the Wi-Fi password, or want a restaurant recommendation? Text or call.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 4v10M4 12h6m4 0h6"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Mid-stay refresh</h3><p>For stays of 5+ nights, add a housekeeping refresh, fresh linens, and restock of paper goods and toiletries.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Event &amp; party package</h3><p>Birthdays, bachelorettes, family reunions: balloon arches, photographers, private chefs, decorators. We coordinate the whole night.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div><h3>Private chef &amp; in-home spa</h3><p>Vetted local chefs, massage therapists, and yoga instructors who come to the property. Pre-booked through your stay portal.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Local Insider guide</h3><p>A curated digital guidebook for each property — our actual favorite tacos, hikes, lake spots, and rainy-day plans. Updated quarterly.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12 2 9l13-7 7 13-7 7-3-7L9 12Z"/></svg></div><h3>Lake-day gear bundle</h3><p>At our lake homes: paddleboards, kayaks, life jackets, cooler, and tubes — added to your reservation, waiting on arrival.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12V7a7 7 0 0 1 14 0v5"/><rect x="3" y="12" width="18" height="10" rx="2"/></svg></div><h3>Pet-friendly add-on</h3><p>At select homes, bring the dog for a flat fee that includes a welcome pack: bowls, blanket, treats, and a list of pet-friendly patios.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Airport &amp; ride coordination</h3><p>Pre-arranged DFW/Love Field pickup, a stocked rental car parked at the home, or scheduled black-car service for the group.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3>Stay-again rewards</h3><p>Book direct twice and your third stay earns 10% off plus an automatic upgrade where the calendar allows. No app, no points to chase.</p></div>
+  <div class="value reveal"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg></div><h3>Work-friendly stays</h3><p>Standing-desk-ready spots, gigabit Wi-Fi with backup hotspot, dual monitors at select homes — flagged on every listing.</p></div>
+</div>
+</div></section>
+<section class="section band"><div class="wrap"><div class="cta">
+<span class="eyebrow" style="color:var(--color-gold-soft)">Tell us what you need</span>
+<h2>Want to add a service to your stay?</h2>
+<p>Most add-ons can be booked through your arrival email. For event packages, private chefs, or anything custom, reach out and we&rsquo;ll build it.</p>
+<div class="hero-cta"><a href="contact.html" class="btn btn-gold">Contact concierge <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div></div></section>
+<footer class="site-footer"><div class="wrap"><div class="foot-grid">
+<div class="foot-col"><a href="index.html" class="brand"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2 2 12v18h28V12L16 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 15l12 10M22 15 10 25" stroke="var(--color-gold)" stroke-width="2.4" stroke-linecap="round"/></svg><span>Staylex</span></a>
+<p>A curated collection of 19 short-term rental homes across North Texas — booked directly, with no platform fees and a real person on the other end.</p></div>
+<div class="foot-col"><h4>Explore</h4><a href="stays.html">All stays</a><a href="stays.html#featured">Featured homes</a><a href="stays.html#coming-soon">Coming soon</a><a href="stays.html#map">Map</a></div>
+<div class="foot-col"><h4>Company</h4><a href="services.html">Services &amp; concierge</a><a href="owners.html">For property owners</a><a href="contact.html">Contact &amp; bookings</a></div>
+<div class="foot-col"><h4>Get in touch</h4><a href="mailto:stays@example.com">stays@example.com</a><a href="tel:+10000000000">(000) 000-0000</a><a href="contact.html">Request a booking</a></div>
+</div><div class="foot-bottom"><span>© 2026 Staylex STR Management. All rights reserved.</span><span>North Texas · Dallas–Fort Worth Metroplex</span></div></div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>var MAPDATA=[{"name": "Cordova Indoor Pool House", "slug": "cordova-irving", "city": "Irving", "lat": 32.7976576, "lng": -96.9691265, "br": 4, "guests": 9, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1772908464/production/60b4ed00a32033002e44e4e2/ekw65ylzpvshjtlfhfu1.jpg", "kind": "", "lt": false, "ms": null, "price": 300}, {"name": "Westshore Lake Home", "slug": "westshore", "city": "Wills Point", "lat": 32.7226922, "lng": -95.9775097, "br": 5, "guests": 10, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1773629332/production/60b4ed00a32033002e44e4e2/agj7otavxhpnfkuboqap.jpg", "kind": "lt", "lt": true, "ms": null, "price": null}, {"name": "DeSoto Pool & Game Estate", "slug": "marlene-desoto", "city": "DeSoto", "lat": 32.6178779, "lng": -96.86538159999999, "br": 7, "guests": 16, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1759510591/production/60b4ed00a32033002e44e4e2/rtczgguxqhyoms6ajmgu.jpg", "kind": "feat", "lt": false, "ms": null, "price": 1200}, {"name": "Eastside Duplex", "slug": "eastside-dallas", "city": "Dallas", "lat": 32.8010078, "lng": -96.75460389999999, "br": 6, "guests": 14, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1760567176/production/60b4ed00a32033002e44e4e2/sw8hvlqg0lr95ui0jhzw.jpg", "kind": "", "lt": false, "ms": null, "price": null}, {"name": "Stillwater Retreat", "slug": "stillwater-retreat", "city": "Clifton", "lat": 31.9407, "lng": -97.3617, "br": 5, "guests": 20, "img": "https://c24cced5.lakewhitneystay.pages.dev/images/gallery/01-hero-sunset-cliff.jpg", "kind": "feat", "lt": false, "ms": null, "price": 549}, {"name": "Lakeshore Lake House", "slug": "lakeshore", "city": "Rowlett", "lat": 32.9132944, "lng": -96.5391669, "br": 7, "guests": 12, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1749657139/production/60b4ed00a32033002e44e4e2/ulhe3qnrv6b2xtpd8vvp.jpg", "kind": "", "lt": false, "ms": null, "price": 400}, {"name": "Flamingo Pool Retreat", "slug": "flamingo", "city": "Duncanville", "lat": 32.653963, "lng": -96.89802189999999, "br": 5, "guests": 16, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1750016792/production/60b4ed00a32033002e44e4e2/rqr4xjoq4qwdiwun8kbn.jpg", "kind": "lt", "lt": true, "ms": null, "price": 350}, {"name": "Minnie Cottage One", "slug": "minnie-unit-1", "city": "Haltom City", "lat": 32.794478562122066, "lng": -97.27982621506271, "br": 2, "guests": 4, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1775150493/production/60b4ed00a32033002e44e4e2/mwdaemss4pjlcpqxjmgb.jpg", "kind": "", "lt": false, "ms": null, "price": null}, {"name": "Minnie Cottage Two", "slug": "minnie-unit-2", "city": "Haltom City", "lat": 32.79456822629259, "lng": -97.2794529232788, "br": 2, "guests": 4, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/listing_images_s3/production/property-photos/37f3de84046dd091994570dd0fe43485608594d404938dc6/67f597c3763a990012e1fe6c/e53c1a06-b3c2-49-OL0s_", "kind": "", "lt": false, "ms": null, "price": null}, {"name": "Minnie Cottage Three", "slug": "minnie-unit-3", "city": "Haltom City", "lat": 32.794478562122066, "lng": -97.27982621506271, "br": 2, "guests": 4, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/listing_images_s3/production/property-photos/37f3de84046dd091994570dd0fe43485608594d404938dc6/67f68f93577b2400107c0870/941e9325-a97a-4d-j3Zgr", "kind": "", "lt": false, "ms": null, "price": null}, {"name": "Minnie Double Cottage", "slug": "minnie-units-2-3", "city": "Haltom City", "lat": 32.79446, "lng": -97.2796675, "br": 4, "guests": 8, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1743356540/production/60b4ed00a32033002e44e4e2/ii0injlecamqkuiqb3k1.jpg", "kind": "", "lt": false, "ms": null, "price": null}, {"name": "McGraw Lakeside Villa", "slug": "mcgraw-lane", "city": "Sherman", "lat": 33.5866323, "lng": -96.56124229999999, "br": 6, "guests": 16, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1733779173/production/60b4ed00a32033002e44e4e2/uhy1qaqy54o1etahbpjm.jpg", "kind": "", "lt": false, "ms": null, "price": null}, {"name": "Blandin Loft A", "slug": "blandin-a", "city": "Fort Worth", "lat": 32.7696898, "lng": -97.307232, "br": 1, "guests": 2, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1727914141/production/60b4ed00a32033002e44e4e2/udtgofgcolfk7jmwv80n.jpg", "kind": "", "lt": false, "ms": 30, "price": null}, {"name": "Blandin Loft B", "slug": "blandin-b", "city": "Fort Worth", "lat": 32.7696898, "lng": -97.307232, "br": 1, "guests": 4, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/v1727914349/production/60b4ed00a32033002e44e4e2/c7lew7ryt0qgpyo1jtwz.jpg", "kind": "", "lt": false, "ms": 30, "price": null}, {"name": "Blandin Loft C", "slug": "blandin-c", "city": "Fort Worth", "lat": 32.7696898, "lng": -97.307232, "br": 1, "guests": 4, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/listing_images_s3/production/property-photos/37f3de84046dd091994570dd0fe43485608594d404938dc6/672e5c6b13385500121d8fad-1285582150110683844_2026487031", "kind": "", "lt": false, "ms": 30, "price": null}, {"name": "Blandin Loft D", "slug": "blandin-d", "city": "Fort Worth", "lat": 32.7696898, "lng": -97.307232, "br": 1, "guests": 3, "img": "https://assets.guesty.com/image/upload/q_auto,f_auto,w_800,h_600,c_fill/listing_images_s3/production/property-photos/37f3de84046dd091994570dd0fe43485608594d404938dc6/670042e7dfc57f00103ea802-1260246624729598547_2006096400", "kind": "", "lt": false, "ms": 30, "price": null}, {"name": "Darvany Pool & Cinema House", "slug": "darvany-dallas", "city": "Dallas", "lat": 32.8779534, "lng": -96.87333339999999, "br": 6, "guests": 20, "img": "https://guesty-listing-images.s3.amazonaws.com/guesty-listing-images/production/original_700638870103803262_1480512194.jpg", "kind": "feat", "lt": false, "ms": null, "price": 640}, {"name": "Shipp Lakeview Guest House", "slug": "shipp-guest-house", "city": "Rowlett", "lat": 32.9066327, "lng": -96.5361867, "br": 2, "guests": 4, "img": "https://guesty-listing-images.s3.amazonaws.com/guesty-listing-images/production/original_49128755_1562794224.jpg", "kind": "", "lt": false, "ms": null, "price": 129}, {"name": "Shipp Lakefront Villa", "slug": "shipp-villa", "city": "Rowlett", "lat": 32.906631, "lng": -96.536186, "br": 6, "guests": 14, "img": "https://guesty-listing-images.s3.amazonaws.com/guesty-listing-images/production/original_52565777_1261952611.jpg", "kind": "feat", "lt": false, "ms": null, "price": 589}];(function(){var t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;var d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);function ico(m){return m==='dark'?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';}if(t){t.innerHTML=ico(d);t.onclick=function(){d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=ico(d);};}
+var mt=document.querySelector('.menu-toggle'),nl=document.querySelector('.nav-links');if(mt){mt.onclick=function(){var o=nl.style.display==='flex';nl.style.cssText=o?'':'display:flex;flex-direction:column;position:absolute;top:4.5rem;right:1.25rem;background:var(--color-surface);padding:1rem 1.5rem;border-radius:1rem;border:1px solid var(--color-border);box-shadow:var(--shadow-lg)';};}
+var grid=document.getElementById('grid'),cards=[].slice.call(grid.children),curType='all',curCity='all',countEl=document.getElementById('count');
+function apply(){var n=0;cards.forEach(function(c){var ok=(curType==='all'||c.dataset.type===curType)&&(curCity==='all'||c.dataset.city===curCity);c.style.display=ok?'':'none';if(ok)n++;});countEl.textContent=n+(n===1?' stay':' stays');}
+function wire(group,attr,set){document.querySelectorAll('#'+group+' .chip').forEach(function(ch){ch.onclick=function(){document.querySelectorAll('#'+group+' .chip').forEach(function(x){x.setAttribute('aria-pressed','false');});ch.setAttribute('aria-pressed','true');set(ch.dataset[attr]);apply();};});}
+wire('type-chips','type',function(v){curType=v;});wire('city-chips','city',function(v){curCity=v;});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});})();(function(){if(typeof L==='undefined'||!document.getElementById('map'))return;
+var map=L.map('map',{scrollWheelZoom:false}).setView([32.85,-96.85],9);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO',maxZoom:19}).addTo(map);
+var bounds=[];
+MAPDATA.forEach(function(p){
+ var cls=p.kind?(' '+p.kind):'';
+ var ic=L.divIcon({className:'',html:'<div class="map-pin'+cls+'"><span>'+(p.br||'')+'</span></div>',iconSize:[26,26],iconAnchor:[13,26],popupAnchor:[0,-24]});
+ var price=p.lt?'Currently long-term':(p.price?('from $'+p.price.toLocaleString()+'/night'):'Rates on request');
+ var ms=p.ms?(' · '+p.ms+'-night min'):'';
+ var html='<div class="map-pop"><img src="'+p.img+'" alt=""><div class="mp-loc">'+p.city+', TX</div><h4>'+p.name+'</h4><div class="mp-meta">'+p.br+' BR · sleeps '+p.guests+ms+' · '+price+'</div><a href="p/'+p.slug+'.html">View home &rarr;</a></div>';
+ L.marker([p.lat,p.lng],{icon:ic}).addTo(map).bindPopup(html);
+ bounds.push([p.lat,p.lng]);
+});
+if(bounds.length)map.fitBounds(bounds,{padding:[50,50]});
+map.on('click',function(){map.scrollWheelZoom.enable();});
+})();</script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body></html>
