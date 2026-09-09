@@ -405,3 +405,58 @@ a,button,input,textarea,select,.card{transition:color var(--transition),backgrou
   .dr-foot{position:sticky;bottom:0;background:var(--color-bg);padding-bottom:1rem}
 }
 @media(prefers-reduced-motion:reduce){.dr-pop{transition:none}}
+
+/* ── Multi-select checkbox grid (experience & amenity pickers) ── */
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.5rem;margin-top:.15rem}
+/* `.field label` is an uppercase caption style — reset it for these rows. */
+.checks .check,.check{display:flex;align-items:center;gap:.6rem;margin:0;padding:.6rem .75rem;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface-2);cursor:pointer;font-size:.9375rem;font-weight:450;line-height:1.35;letter-spacing:0;text-transform:none;color:var(--color-text);transition:border-color .15s,background .15s}
+.checks .check:hover{border-color:var(--color-primary)}
+.checks .check input{width:1rem;height:1rem;flex:none;margin:0;accent-color:var(--color-primary)}
+.checks .check:has(input:checked){border-color:var(--color-primary);background:var(--color-primary-soft)}
+.checks .check:focus-within{outline:none;border-color:var(--color-primary);box-shadow:0 0 0 3px var(--color-primary-soft)}
+.field-note{font-size:.85rem;color:var(--color-text-muted);margin:.55rem 0 0;line-height:1.5}
+.fee-note{margin:.25rem 0 0;padding:.85rem 1rem;border-radius:var(--radius-md);background:var(--color-primary-soft);color:var(--color-primary-hover);font-size:.9rem;line-height:1.5}
+[data-theme="dark"] .fee-note{color:var(--color-primary)}
+.exp-group{margin-top:var(--space-8)}
+.exp-group:first-of-type{margin-top:var(--space-6)}
+.exp-group > h3{font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted);font-weight:600;margin:0 0 var(--space-4);padding-bottom:.6rem;border-bottom:1px solid var(--color-divider)}
+/* These forms carry .book-card themselves, so the inner-form rule misses them. */
+form.book-card > .btn{width:100%;justify-content:center;margin-top:.35rem}
+/* Grid items default to min-width:auto, so inputs with a wide intrinsic
+   min-content size (type="time", type="number") blow past narrow screens. */
+.two > *{min-width:0}
+.field input,.field select,.field textarea{max-width:100%}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+
+/* Six numbered steps read as a clean 3x2 instead of a ragged 4+2. */
+@media(min-width:900px){.values-3{grid-template-columns:repeat(3,1fr)}}
+
+/* Cards rest as a scannable list of headlines and open the detail on hover or
+   keyboard focus. Touch devices have no hover, so they stay open there. */
+@media (min-width:700px){
+  .can-hover .hoverdeck{align-items:start}
+  .can-hover .hoverdeck .value{position:relative;transition:border-color .28s ease,box-shadow .28s ease}
+  .can-hover .hoverdeck .value > p{
+    max-height:0;opacity:0;margin-top:0;overflow:hidden;
+    transition:max-height .42s cubic-bezier(.4,0,.2,1),opacity .26s ease,margin-top .42s cubic-bezier(.4,0,.2,1);
+  }
+  .can-hover .hoverdeck .value::after{
+    content:"";position:absolute;top:1.6rem;right:1.5rem;width:8px;height:8px;
+    border-right:1.5px solid var(--color-text-faint);border-bottom:1.5px solid var(--color-text-faint);
+    transform:rotate(45deg);transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .28s ease;
+  }
+  .can-hover .hoverdeck .value:hover,.can-hover .hoverdeck .value:focus-within{
+    border-color:var(--color-primary);box-shadow:var(--shadow-lg);
+  }
+  .can-hover .hoverdeck .value:hover > p,.can-hover .hoverdeck .value:focus-within > p{
+    max-height:26rem;opacity:1;margin-top:var(--space-2);
+  }
+  .can-hover .hoverdeck .value:hover::after,.can-hover .hoverdeck .value:focus-within::after{
+    transform:rotate(225deg);border-color:var(--color-primary);
+  }
+  .can-hover .band .hoverdeck .value::after{border-color:rgba(255,255,255,.4)}
+  .can-hover .hoverdeck .value h3{padding-right:1.75rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .hoverdeck .value > p,.hoverdeck .value::after{transition:none}
+}
