@@ -306,3 +306,8 @@ a,button,input,textarea,select,.card{transition:color var(--transition),backgrou
   .pd-gallery .hide-sm{display:none}
   .pd-gallery button:not(.g0):not(.show-sm){display:none}
 }
+
+.map-pin.soon{opacity:.45;filter:grayscale(1)}
+
+.soon-banner{background:var(--color-gold);color:#1a1a1a;text-align:center;padding:.7rem 1.25rem;font-size:.9rem;font-weight:600;line-height:1.45}
+.soon-banner a{color:#1a1a1a;text-decoration:underline}
