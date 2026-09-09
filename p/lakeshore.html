@@ -65,7 +65,7 @@ In addition to the many amazing attractions offered in the nearby major cities, 
 <div class="book-price"><b>$400</b> <small>/ night</small></div>
 <div style="margin:.75rem 0 1rem;padding:.75rem;background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:.82rem;line-height:1.4;color:var(--color-text-muted)"><div style="display:flex;gap:.5rem;align-items:flex-start"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:.1rem"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg><div><strong style="color:var(--color-text);font-size:.85rem">Stay protection included.</strong> Accidental damage waiver on every reservation (up to $3,000). Optional travel protection at checkout. <a href="../services.html#stay-protection" style="color:var(--color-text);text-decoration:underline">Learn more</a></div></div></div>
 <form onsubmit="event.preventDefault();this.querySelector('.book-note').textContent='Thanks — preview form. Connect to your inbox/booking engine at launch.';">
-<div class="two"><div class="field"><label>Check-in</label><input type="date"></div><div class="field"><label>Check-out</label><input type="date"></div></div>
+<div class="daterange" data-label="Dates"></div>
 <div class="field"><label>Guests</label><input type="number" min="1" max="12" value="2"></div>
 <div class="field"><label>Name</label><input required></div>
 <div class="field"><label>Email</label><input type="email" required></div>
@@ -419,4 +419,5 @@ document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'
 })();
 
 
-</script></body></html>
+</script><script src="../assets/daterange.js"></script>
+</body></html>

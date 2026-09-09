@@ -43,7 +43,7 @@
 <div class="two"><div class="field"><label>First name</label><input required></div><div class="field"><label>Last name</label><input required></div></div>
 <div class="field"><label>Email</label><input type="email" required></div>
 <div class="field"><label>Which home?</label><select><option>Cordova Indoor Pool House — Irving</option><option>Westshore Lake Home — Wills Point</option><option>DeSoto Pool &amp; Game Estate — DeSoto</option><option>Eastside Duplex — Dallas</option><option>Stillwater Retreat — Clifton</option><option>Lakeshore Lake House — Rowlett</option><option>Flamingo Pool Retreat — Duncanville</option><option>Minnie Cottage One — Haltom City</option><option>Minnie Cottage Two — Haltom City</option><option>Minnie Cottage Three — Haltom City</option><option>Minnie Double Cottage — Haltom City</option><option>McGraw Lakeside Villa — Sherman</option><option>Blandin Loft A — Fort Worth</option><option>Blandin Loft B — Fort Worth</option><option>Blandin Loft C — Fort Worth</option><option>Blandin Loft D — Fort Worth</option><option>Darvany Pool &amp; Cinema House — Dallas</option><option>Shipp Lakeview Guest House — Rowlett</option><option>Shipp Lakefront Villa — Rowlett</option><option>Not sure yet / multiple</option></select></div>
-<div class="two"><div class="field"><label>Check-in</label><input type="date"></div><div class="field"><label>Check-out</label><input type="date"></div></div>
+<div class="daterange" data-label="Dates"></div>
 <div class="field"><label>Guests</label><input type="number" min="1" value="2"></div>
 <div class="field"><label>Anything else?</label><textarea rows="3" placeholder="Group trip, special requests, questions..."></textarea></div>
 <button class="btn btn-primary" style="justify-content:center">Send request</button>
@@ -415,4 +415,5 @@ map.on('click',function(){map.scrollWheelZoom.enable();});
 })();
 
 
-</script></body></html>
+</script><script src="assets/daterange.js"></script>
+</body></html>

@@ -348,3 +348,60 @@ a,button,input,textarea,select,.card{transition:color var(--transition),backgrou
 .owner-cta h2{font-size:1.5rem;margin:.6rem 0 .5rem}
 .owner-cta p{color:var(--color-text-muted);margin:0}
 @media(max-width:720px){.owner-cta{grid-template-columns:1fr;gap:var(--space-6)}.owner-cta .btn{justify-self:start}}
+
+/* ── Date-range picker ────────────────────────────────────────────────
+   One field, one calendar. First click = check-in, second = check-out. */
+.daterange{position:relative;display:flex;flex-direction:column;gap:.35rem}
+.daterange>label{font-size:var(--text-xs);font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--color-text-muted)}
+.dr-trigger{display:flex;align-items:center;gap:.6rem;width:100%;text-align:left;padding:.65rem .85rem;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-bg);color:var(--color-text);font:inherit;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.dr-trigger:hover{border-color:var(--color-text-faint)}
+.dr-trigger:focus-visible,.daterange .dr-trigger[aria-expanded="true"]{outline:none;border-color:var(--color-primary);box-shadow:0 0 0 3px var(--color-primary-soft)}
+.dr-trigger svg{width:1.125rem;height:1.125rem;flex-shrink:0;color:var(--color-text-muted)}
+.dr-text{display:flex;flex-direction:column;gap:.05rem;min-width:0}
+.dr-range{font-size:var(--text-sm);font-weight:600;letter-spacing:-.005em}
+.dr-nights,.dr-placeholder{font-size:var(--text-xs);color:var(--color-text-muted)}
+.dr-placeholder{font-size:var(--text-sm);font-weight:500}
+.daterange.has-error .dr-trigger{border-color:var(--color-primary);box-shadow:0 0 0 3px var(--color-primary-soft)}
+
+.dr-pop{position:absolute;z-index:60;top:calc(100% + .5rem);left:0;min-width:min(37rem,88vw);padding:1rem 1.1rem 0;background:var(--color-bg);border:1px solid var(--color-border);border-radius:var(--radius-lg);box-shadow:0 1px 2px rgba(20,20,19,.05),0 12px 32px -8px rgba(20,20,19,.18);opacity:0;transform:translateY(-4px);transition:opacity .14s ease,transform .14s ease}
+.dr-pop.is-in{opacity:1;transform:none}
+.dr-head{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin-bottom:.9rem}
+.dr-hint{margin:0;font-size:var(--text-xs);font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--color-text-muted);text-align:center;flex:1}
+.dr-nav{display:grid;place-items:center;width:2rem;height:2rem;border:1px solid var(--color-border);border-radius:var(--radius-full);background:var(--color-bg);color:var(--color-text);cursor:pointer;flex-shrink:0}
+.dr-nav svg{width:1rem;height:1rem}
+.dr-nav:hover:not(:disabled){border-color:var(--color-text)}
+.dr-nav:disabled{opacity:.3;cursor:default}
+.dr-months{display:grid;grid-template-columns:1fr;gap:1.75rem}
+@media(min-width:700px){.dr-months{grid-template-columns:1fr 1fr}}
+.dr-month-name{font-size:var(--text-sm);font-weight:600;text-align:center;margin-bottom:.65rem}
+.dr-dow,.dr-grid{display:grid;grid-template-columns:repeat(7,1fr)}
+.dr-dow span{font-size:.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-faint);text-align:center;padding-bottom:.4rem}
+.dr-grid{row-gap:2px}
+.dr-day{position:relative;aspect-ratio:1;display:grid;place-items:center;border:0;background:none;font:inherit;font-size:var(--text-sm);font-variant-numeric:tabular-nums;color:var(--color-text);cursor:pointer;border-radius:var(--radius-full)}
+.dr-day>span{position:relative;z-index:1}
+.dr-day:hover:not(:disabled):not(.is-start):not(.is-end){background:var(--color-surface-offset)}
+.dr-day:focus-visible{outline:2px solid var(--color-primary);outline-offset:-2px}
+.dr-day.is-past{color:var(--color-text-faint);cursor:default;text-decoration:line-through;text-decoration-thickness:1px}
+.dr-day.is-today:not(.is-start):not(.is-end){font-weight:700}
+.dr-day.is-between{background:var(--color-primary-soft);border-radius:0}
+.dr-day.is-start,.dr-day.is-end{color:#fff;font-weight:600}
+.dr-day.is-start::before,.dr-day.is-end::before{content:"";position:absolute;inset:0;background:var(--color-primary);border-radius:var(--radius-full)}
+/* Square off the inner edge so a selected range reads as one continuous bar. */
+.dr-day.is-start:not(.is-end){background:linear-gradient(to right,transparent 50%,var(--color-primary-soft) 50%)}
+.dr-day.is-end:not(.is-start){background:linear-gradient(to right,var(--color-primary-soft) 50%,transparent 50%)}
+.dr-day.is-preview::before{opacity:.55}
+.dr-pad{aspect-ratio:1}
+.dr-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.5rem;padding:.75rem 0;border-top:1px solid var(--color-divider)}
+.dr-clear{border:0;background:none;font:inherit;font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:.3rem 0}
+.dr-clear:hover{color:var(--color-text)}
+.dr-done{border:0;background:var(--color-text);color:var(--color-bg);font:inherit;font-size:var(--text-sm);font-weight:600;padding:.5rem 1.1rem;border-radius:var(--radius-full);cursor:pointer}
+.dr-done:hover{background:#000;color:#fff}
+[data-theme="dark"] .dr-done:hover{background:#fff;color:var(--color-bg)}
+/* On narrow screens the popover would overflow the card, so anchor it to
+   the viewport and let it fill the width instead. */
+@media(max-width:699px){
+  .dr-pop{position:fixed;top:auto;bottom:0;left:0;right:0;min-width:0;width:100%;max-height:88vh;overflow-y:auto;border-radius:var(--radius-lg) var(--radius-lg) 0 0;border-bottom:0;padding:1rem 1.1rem 0;transform:translateY(12px)}
+  .dr-pop.is-in{transform:none}
+  .dr-foot{position:sticky;bottom:0;background:var(--color-bg);padding-bottom:1rem}
+}
+@media(prefers-reduced-motion:reduce){.dr-pop{transition:none}}
