@@ -477,3 +477,53 @@ form.book-card > .btn{width:100%;justify-content:center;margin-top:.35rem}
 @media (prefers-reduced-motion:reduce){
   .hoverdeck .value > p,.hoverdeck .value::after{transition:none}
 }
+
+/* ── Experiences page top: photo band + category marks ─────────────────────
+   A distinct top-of-page treatment. Not the shared .hero — this page leads
+   with what is actually on offer instead of one property photo. */
+.exp-top{position:relative;background:var(--color-bg);overflow:hidden;border-bottom:1px solid var(--color-divider);padding-bottom:clamp(2rem,4vw,3rem)}
+.exp-top .wrap{padding-top:0;padding-bottom:0}
+.exp-head{max-width:44rem;margin:0 auto;text-align:center}
+.exp-head .eyebrow{display:block;margin-bottom:var(--space-3)}
+.exp-head h1{font-size:var(--text-hero);line-height:1.08;letter-spacing:-.03em;color:var(--color-text)}
+.exp-head .lede{margin:var(--space-5) auto 0;max-width:52ch;font-size:var(--text-lg);color:var(--color-text-muted);line-height:1.55}
+.exp-top > .wrap:first-child{padding-top:clamp(2.5rem,5vw,4rem)}
+
+.exp-band{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow:hidden;
+  margin-top:clamp(1.75rem,3.5vw,2.75rem);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);
+          mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.exp-track{display:flex;gap:.75rem;width:max-content;will-change:transform;animation:exp-marquee 78s linear infinite}
+.exp-band:hover .exp-track,.exp-band:focus-within .exp-track{animation-play-state:paused}
+@keyframes exp-marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(calc(-50% - .375rem),0,0)}}
+
+.exp-shot{position:relative;flex:0 0 auto;margin:0;width:clamp(200px,21vw,308px);aspect-ratio:3/2;
+  border-radius:var(--radius-md);overflow:hidden;background:var(--color-surface-offset)}
+.exp-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.exp-shot figcaption{position:absolute;left:.625rem;bottom:.625rem;background:rgba(20,19,18,.62);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;font-size:.6875rem;
+  letter-spacing:.02em;padding:.3rem .625rem;border-radius:var(--radius-full);font-weight:500}
+
+.exp-cats{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:clamp(1.5rem,3vw,2.25rem)}
+.exp-cat{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem .9rem .5rem .7rem;
+  border:1px solid var(--color-divider);border-radius:var(--radius-full);background:var(--color-bg);
+  font-size:.8125rem;font-weight:500;color:var(--color-text);white-space:nowrap;
+  transition:border-color .22s ease,background-color .22s ease}
+.exp-cat svg{width:18px;height:18px;flex:0 0 auto;color:var(--color-primary)}
+.exp-cat:hover,.exp-cat:focus-visible{border-color:var(--color-primary);background:var(--color-primary-soft)}
+.exp-head-cta{margin-top:clamp(1.75rem,3.5vw,2.5rem)}
+.exp-head-cta .hero-cta{justify-content:center;margin-top:0}
+
+@media (max-width:760px){
+  .exp-shot{width:clamp(168px,52vw,220px)}
+  .exp-cat{font-size:.75rem;padding:.44rem .75rem .44rem .6rem}
+  .exp-cat svg{width:16px;height:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  .exp-track{animation:none}
+  .exp-band{overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+
+/* the Partner hero photo is a close crop, so it wants a taller frame */
+.hero-bg-tall{aspect-ratio:4/3.4}
+@media (max-width:900px){.hero-bg-tall{aspect-ratio:5/4}}
